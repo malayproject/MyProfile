@@ -6,16 +6,19 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-top: 0px;
+  margin: 0px;
+  background-color: rgb(95, 99, 102);
 }
 
 .navbar {
+  /* width: 100%; */
   width: 100%;
   height: 60px;
   display: flex;
   flex-direction: row;
   /* margin: 0px 0px 10px 0px; */
   background-color: rgb(255, 241, 116);
+  color: rgb(95, 99, 102);
 }
 
 .navLeftContainer {
@@ -31,18 +34,17 @@ body {
 }
 
 .textWhite {
-  color: white;
+  color: rgb(255, 241, 116);
 }
 
 .container {
   display: flex;
   flex-direction: column;
   width: 100%;
-  padding: 20px;
+  padding: 50px;
   align-items: center;
   justify-content: center;
   /* border: 1px solid #0bb; */
-  background-color: rgb(95, 99, 102);
 }
 
 img {
@@ -52,6 +54,7 @@ img {
 
 .roundImg {
   border: 2px, solid, #04d;
+  padding: 10px;
   border-radius: 50%;
   width: 180px;
   height: 180px;
@@ -60,9 +63,13 @@ img {
 .skillContainer {
   display: flex;
   flex-direction: column;
-  width: 100%;
+  width: 80%;
   /* background-color: #97bc62ff; */
   text-align: center;
+  border: 1px solid white;
+  border-radius: 20px;
+  margin-bottom: 50px;
+  padding: 20px;
 }
 
 .skills {
@@ -84,9 +91,12 @@ img {
 .reposContainer {
   display: flex;
   flex-direction: column;
-  width: 100%;
+  width: 80%;
   /* background-color: #099; */
   text-align: center;
+  border: 1px solid white;
+  border-radius: 20px;
+  padding: 20px;
 }
 
 .repos {
@@ -103,4 +113,9 @@ img {
   width: auto;
   min-width: 150px;
   padding: 2px;
+  transition: background-color 1.2s;
+}
+
+.repo:hover {
+  background-color: black;
 }
